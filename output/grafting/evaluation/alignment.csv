@@ -1,0 +1,3 @@
+"method","mean_same_cond_dist","mean_diff_cond_dist","alignment_ratio","alignment_accuracy"
+"guided_pls",2.02789490474611,14.6057590238611,0.138842144487882,1
+"rbh_pls",0.227891793823585,0.316683373100581,0.719620331160251,0.75

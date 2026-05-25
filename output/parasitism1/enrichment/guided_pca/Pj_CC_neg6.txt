@@ -1,0 +1,1 @@
+GOID	Definition	GOTerm	GeneID	Pvalue	Qvalue

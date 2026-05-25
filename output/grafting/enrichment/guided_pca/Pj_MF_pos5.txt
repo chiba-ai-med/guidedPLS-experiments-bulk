@@ -1,0 +1,2 @@
+GOID	Definition	GOTerm	GeneID	Pvalue	Qvalue
+GO:0050404	MF	zeatin O-beta-D-xylosyltransferase activity	Pjv1_00004361|Pjv1_00014208|Pjv1_00014209|Pjv1_00029630	9.89230593498221e-05	0.0181029198610174

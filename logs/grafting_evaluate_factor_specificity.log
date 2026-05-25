@@ -1,0 +1,189 @@
+Loading required package: limma
+Loading required package: Rcpp
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘AnnotationDbi’ 
+DEG set sizes:
+  0d: At=2707, Pj=2532
+  1d: At=622, Pj=428
+  2d: At=1, Pj=25
+  3d: At=0, Pj=0
+  4d: At=4, Pj=1
+  5d: At=1, Pj=1
+  6d: At=1, Pj=0
+  7d: At=57, Pj=35
+  14d: At=334, Pj=193
+  graft: At=2707, Pj=2532
+
+=== Factor Specificity Summary ===
+
+guided_pls At:
+  Dim1 -> 0d (score=52.6, specificity=0.50)
+  Dim2 -> 1d (score=21.2, specificity=0.82)
+  Dim3 -> 14d (score=27.0, specificity=1.00)
+  Dim4 -> 7d (score=0.2, specificity=0.89)
+  N_DISTINCT conditions: 4/4
+  Mean specificity: 0.802
+
+guided_pls Pj:
+  Dim1 -> 0d (score=60.9, specificity=0.50)
+  Dim2 -> 1d (score=12.0, specificity=0.66)
+  Dim3 -> 14d (score=18.2, specificity=1.00)
+  Dim4 -> 7d (score=2.6, specificity=0.93)
+  N_DISTINCT conditions: 4/4
+  Mean specificity: 0.772
+
+rbh_pls At:
+  Dim1 -> 0d (score=3.0, specificity=0.50)
+  Dim2 -> 0d (score=3.0, specificity=0.50)
+  Dim3 -> 0d (score=3.0, specificity=0.50)
+  Dim4 -> 0d (score=3.0, specificity=0.50)
+  N_DISTINCT conditions: 1/4
+  Mean specificity: 0.500
+
+rbh_pls Pj:
+  Dim1 -> 0d (score=6.7, specificity=0.50)
+  Dim2 -> 0d (score=6.7, specificity=0.50)
+  Dim3 -> 0d (score=6.7, specificity=0.50)
+  Dim4 -> 0d (score=6.7, specificity=0.50)
+  N_DISTINCT conditions: 1/4
+  Mean specificity: 0.500
+
+guided_pca At:
+  Dim1 -> 0d (score=54.8, specificity=0.50)
+  Dim2 -> 1d (score=31.8, specificity=0.67)
+  Dim3 -> 14d (score=41.6, specificity=0.95)
+  Dim4 -> 1d (score=9.9, specificity=0.74)
+  Dim5 -> 6d (score=1.4, specificity=0.78)
+  Dim6 -> 4d (score=5.6, specificity=0.80)
+  Dim7 -> 5d (score=1.4, specificity=0.56)
+  Dim8 -> 7d (score=1.1, specificity=0.99)
+  Dim9 -> 0d (score=20.4, specificity=0.50)
+  Dim10 -> 0d (score=33.2, specificity=0.50)
+  Dim11 -> 1d (score=1.3, specificity=0.61)
+  N_DISTINCT conditions: 7/11
+  Mean specificity: 0.691
+
+guided_pca Pj:
+  Dim1 -> 0d (score=60.9, specificity=0.50)
+  Dim2 -> 1d (score=86.0, specificity=0.83)
+  Dim3 -> 14d (score=22.8, specificity=0.65)
+  Dim4 -> 7d (score=12.0, specificity=0.58)
+  Dim5 -> 2d (score=6.6, specificity=0.83)
+  Dim6 -> 2d (score=0.2, specificity=0.80)
+  Dim7 -> 7d (score=1.9, specificity=0.58)
+  Dim8 -> 7d (score=0.4, specificity=0.95)
+  Dim9 -> 0d (score=38.3, specificity=0.50)
+  Dim10 -> 0d (score=41.8, specificity=0.50)
+  Dim11 -> 0d (score=11.3, specificity=0.50)
+  N_DISTINCT conditions: 5/11
+  Mean specificity: 0.655
+
+pca At:
+  Dim1 -> 0d (score=54.8, specificity=0.50)
+  Dim2 -> 14d (score=19.5, specificity=0.61)
+  Dim3 -> 14d (score=34.5, specificity=0.89)
+  Dim4 -> 1d (score=12.5, specificity=0.92)
+  N_DISTINCT conditions: 3/4
+  Mean specificity: 0.730
+
+pca Pj:
+  Dim1 -> 0d (score=60.9, specificity=0.50)
+  Dim2 -> 1d (score=51.4, specificity=0.79)
+  Dim3 -> 14d (score=18.2, specificity=0.65)
+  Dim4 -> 7d (score=16.1, specificity=0.58)
+  N_DISTINCT conditions: 4/4
+  Mean specificity: 0.633
+
+=== Specificity comparison ===
+      method species n_distinct n_dim mean_specificity mean_max_score
+1 guided_pls      At          4     4        0.8015938      25.234384
+2 guided_pls      Pj          4     4        0.7719417      23.431829
+3    rbh_pls      At          1     4        0.5000000       3.009023
+4    rbh_pls      Pj          1     4        0.5000000       6.664087
+5 guided_pca      At          7    11        0.6909308      18.421177
+6 guided_pca      Pj          5    11        0.6553461      25.651671
+7        pca      At          3     4        0.7300567      30.330958
+8        pca      Pj          4     4        0.6325036      36.632037
+
+=== Cross-species dimension concordance ===
+  guided_pls Dim1: At->0d, Pj->0d MATCH
+  guided_pls Dim2: At->1d, Pj->1d MATCH
+  guided_pls Dim3: At->14d, Pj->14d MATCH
+  guided_pls Dim4: At->7d, Pj->7d MATCH
+  rbh_pls Dim1: At->0d, Pj->0d MATCH
+  rbh_pls Dim2: At->0d, Pj->0d MATCH
+  rbh_pls Dim3: At->0d, Pj->0d MATCH
+  rbh_pls Dim4: At->0d, Pj->0d MATCH
+  guided_pca Dim1: At->0d, Pj->0d MATCH
+  guided_pca Dim2: At->1d, Pj->1d MATCH
+  guided_pca Dim3: At->14d, Pj->14d MATCH
+  guided_pca Dim4: At->1d, Pj->7d 
+  guided_pca Dim5: At->6d, Pj->2d 
+  guided_pca Dim6: At->4d, Pj->2d 
+  guided_pca Dim7: At->5d, Pj->7d 
+  guided_pca Dim8: At->7d, Pj->7d MATCH
+  guided_pca Dim9: At->0d, Pj->0d MATCH
+  guided_pca Dim10: At->0d, Pj->0d MATCH
+  guided_pca Dim11: At->1d, Pj->0d 
+  pca Dim1: At->0d, Pj->0d MATCH
+  pca Dim2: At->14d, Pj->1d 
+  pca Dim3: At->14d, Pj->14d MATCH
+  pca Dim4: At->1d, Pj->7d 
+
+      method n_concordant n_dim concordance_rate
+1 guided_pls            4     4        1.0000000
+2    rbh_pls            4     4        1.0000000
+3 guided_pca            6    11        0.5454545
+4        pca            2     4        0.5000000

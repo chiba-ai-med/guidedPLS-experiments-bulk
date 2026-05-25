@@ -1,0 +1,5 @@
+GOID	Definition	GOTerm	GeneID	Pvalue	Qvalue
+GO:0003735	MF	structural constituent of ribosome	Pjv1_00000457|Pjv1_00021909|Pjv1_00020136|Pjv1_00024283|Pjv1_00028769	0.000339123036878003	0.0723603898287471
+GO:0080054	MF	low-affinity nitrate transmembrane transporter activity	Pjv1_00003975|Pjv1_00012271|Pjv1_00012272	0.000994604683241571	0.0723603898287471
+GO:0052637	MF	delta 3-trans-hexadecenoic acid phosphatidylglycerol desaturase activity	Pjv1_00000320|Pjv1_00000321|Pjv1_00021235	0.000994604683241571	0.0723603898287471
+GO:0045156	MF	electron transporter, transferring electrons within the cyclic electron transport pathway of photosynthesis activity	Pjv1_00010950|Pjv1_00019149|Pjv1_00015603|Pjv1_00023028|Pjv1_00021717|Pjv1_00030140	0.00126948052331135	0.0723603898287471

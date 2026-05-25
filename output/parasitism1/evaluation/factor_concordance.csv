@@ -1,0 +1,5 @@
+"method","n_concordant","n_dim","concordance_rate"
+"guided_pls",4,4,1
+"rbh_pls",0,4,0
+"guided_pca",1,7,0.142857142857143
+"pca",0,4,0
