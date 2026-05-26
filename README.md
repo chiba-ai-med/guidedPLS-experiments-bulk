@@ -2,8 +2,9 @@
 
 Benchmarking of guidedPLS and comparison methods (RBH-PLS, guided-PCA, PCA) on bulk RNA-seq data from parasite-host cross-species experiments.
 
-This repository is one of three sibling repositories that together support a single manuscript on guided-PLS:
+This repository is one of four sibling repositories that together support a single manuscript on guided-PLS:
 
+- [`chiba-ai-med/guidedPLS-experiments-sim`](https://github.com/chiba-ai-med/guidedPLS-experiments-sim) — simulation experiments
 - [`chiba-ai-med/guidedPLS-experiments-bulk`](https://github.com/chiba-ai-med/guidedPLS-experiments-bulk) — **this repository** (bulk RNA-seq, parasite-host)
 - [`chiba-ai-med/guidedPLS-experiments-sc`](https://github.com/chiba-ai-med/guidedPLS-experiments-sc) — single-cell multi-omics experiments
 - [`chiba-ai-med/ImageRegistration-experiments3`](https://github.com/chiba-ai-med/ImageRegistration-experiments3) — image-registration experiments
