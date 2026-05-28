@@ -36,14 +36,15 @@ for (p in panels) {
             } else {
                 pdf(file = outfile, width = 7, height = 7)
             }
-            par(mar = c(4, 4, 2, 2))
+            par(mar = c(5, 5, 2, 2))
 
             plot(score_At[, c(x, y)],
                 col = label_At, xlim = xlim, ylim = ylim,
                 xlab = paste0("Component-", x),
                 ylab = paste0("Component-", y),
                 pch = 20, cex = 3.5, bty = "n",
-                main = "")
+                main = "",
+                cex.lab = 2, cex.axis = 1.8)
             par(new = TRUE)
             plot(score_Pj[, c(x, y)],
                 col = label_Pj, xlim = xlim, ylim = ylim,
@@ -64,16 +65,16 @@ for (p in panels) {
     for (ext in c("png", "pdf")) {
         outfile <- paste0(outdir, "/", panel, "_legend.", ext)
         if (ext == "png") {
-            png(file = outfile, width = 400, height = 700)
+            png(file = outfile, width = 500, height = 1000)
         } else {
-            pdf(file = outfile, width = 4, height = 7)
+            pdf(file = outfile, width = 5, height = 10)
         }
         par(mar = c(0, 0, 0, 0))
         plot.new()
         legend("center",
             col = labels[unique(names(labels))],
             legend = unique(names(labels)),
-            pch = pchs, cex = 1.5, bg = "transparent",
+            pch = pchs, cex = 2.5, bg = "transparent",
             bty = "n")
         dev.off()
     }
