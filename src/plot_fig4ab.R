@@ -4,8 +4,8 @@ source("src/Functions.R")
 # Fig4B: grafting (guided_pls, rbh_pls) + legend
 
 panels <- list(
-    list(panel = "Fig4A", sample = "parasitism1"),
-    list(panel = "Fig4B", sample = "grafting")
+    list(panel = "Fig4A", sample = "parasitism1", pt_cex = 4.5),
+    list(panel = "Fig4B", sample = "grafting", pt_cex = 3.5)
 )
 methods <- c("guided_pls", "rbh_pls")
 
@@ -42,13 +42,13 @@ for (p in panels) {
                 col = label_At, xlim = xlim, ylim = ylim,
                 xlab = paste0("Component-", x),
                 ylab = paste0("Component-", y),
-                pch = 20, cex = 3.5, bty = "n",
+                pch = 20, cex = p$pt_cex, bty = "n",
                 main = "",
                 cex.lab = 2, cex.axis = 1.8)
             par(new = TRUE)
             plot(score_Pj[, c(x, y)],
                 col = label_Pj, xlim = xlim, ylim = ylim,
-                pch = 18, cex = 3.5, bty = "n", ann = FALSE,
+                pch = 18, cex = p$pt_cex, bty = "n", ann = FALSE,
                 xaxt = "n", yaxt = "n")
             segments(xlim[1], 0, xlim[2], 0, lty = 2)
             segments(0, ylim[1], 0, ylim[2], lty = 2)
