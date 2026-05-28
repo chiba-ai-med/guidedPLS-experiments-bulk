@@ -21,11 +21,11 @@ for (sample in samples) {
 
         panels[[panel_idx]] <- ggplot(d, aes(x = condition, y = dim_label, fill = neg_log10_p)) +
             geom_tile(color = "white", linewidth = 0.5) +
-            geom_text(aes(label = round(neg_log10_p, 1)), size = 3.2, color = "white") +
+            geom_text(aes(label = round(neg_log10_p, 1)), size = 6.4, color = "white") +
             scale_fill_gradientn(colours = viridis(100), name = "-log10(p)") +
             theme_minimal() +
-            theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
-                  axis.text.y = element_text(size = 10),
+            theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 14),
+                  axis.text.y = element_text(size = 14),
                   legend.key.height = unit(0.4, "cm")) +
             xlab("") + ylab("") +
             ggtitle(paste0(sample, " \u2014 ", sp))

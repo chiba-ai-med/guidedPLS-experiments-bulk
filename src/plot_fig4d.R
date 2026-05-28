@@ -41,10 +41,10 @@ g_spec <- ggplot(spec_avg, aes(x = method, y = mean_specificity, fill = method))
     geom_bar(stat = "identity", width = 0.7) +
     facet_wrap(~ sample) +
     theme_minimal() +
-    theme(axis.text.x = element_text(angle = 30, hjust = 1, size = 11),
-          text = element_text(size = 13),
+    theme(axis.text.x = element_text(angle = 30, hjust = 1, size = 14),
+          text = element_text(size = 16),
           legend.position = "none",
-          strip.text = element_text(size = 12, face = "bold")) +
+          strip.text = element_text(size = 16, face = "bold")) +
     scale_fill_brewer(palette = "Set2") +
     ylab("Factor specificity") +
     xlab("") +
@@ -59,10 +59,10 @@ g_conc <- ggplot(conc_df, aes(x = method, y = concordance_rate, fill = method)) 
     geom_text(aes(label = note), vjust = -0.3, size = 5) +
     facet_wrap(~ sample) +
     theme_minimal() +
-    theme(axis.text.x = element_text(angle = 30, hjust = 1, size = 11),
-          text = element_text(size = 13),
+    theme(axis.text.x = element_text(angle = 30, hjust = 1, size = 14),
+          text = element_text(size = 16),
           legend.position = "none",
-          strip.text = element_text(size = 12, face = "bold")) +
+          strip.text = element_text(size = 16, face = "bold")) +
     scale_fill_brewer(palette = "Set2") +
     ylab("Cross-species concordance") +
     xlab("") +
