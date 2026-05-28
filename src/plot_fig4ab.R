@@ -43,7 +43,7 @@ for (p in panels) {
                 xlab = paste0("Component-", x),
                 ylab = paste0("Component-", y),
                 pch = 20, cex = 3.5, bty = "n",
-                main = paste0(method, " (", sample, ")"))
+                main = "")
             par(new = TRUE)
             plot(score_Pj[, c(x, y)],
                 col = label_Pj, xlim = xlim, ylim = ylim,
