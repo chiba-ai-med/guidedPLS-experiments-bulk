@@ -46,7 +46,7 @@ for (sample in samples) {
         geom_bar(stat = "identity", width = 0.7) +
         common_theme +
         scale_fill_brewer(palette = "Dark2") +
-        ylab("Factor specificity") +
+        ylab("") +
         xlab("") +
         geom_hline(yintercept = 0.5, linetype = "dashed", color = "grey50", linewidth = 0.4)
 
@@ -67,7 +67,7 @@ for (sample in samples) {
         geom_text(aes(label = note), vjust = -0.3, size = 5) +
         common_theme +
         scale_fill_brewer(palette = "Dark2") +
-        ylab("Cross-species concordance") +
+        ylab("") +
         xlab("") +
         ylim(0, 1.1)
 
