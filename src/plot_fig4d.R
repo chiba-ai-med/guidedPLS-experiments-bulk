@@ -51,9 +51,9 @@ for (sample in samples) {
         geom_hline(yintercept = 0.5, linetype = "dashed", color = "grey50", linewidth = 0.4)
 
     ggsave(file = paste0(outdir, "/Fig4D_factor_specificity_", sample, ".png"),
-        plot = g, width = 5, height = 4, dpi = 300)
+        plot = g, width = 5.5, height = 4, dpi = 300)
     ggsave(file = paste0(outdir, "/Fig4D_factor_specificity_", sample, ".pdf"),
-        plot = g, width = 5, height = 4)
+        plot = g, width = 5.5, height = 4)
 
     # Cross-species concordance
     d_conc <- conc_df[conc_df$sample == sample, ]
@@ -72,9 +72,9 @@ for (sample in samples) {
         ylim(0, 1.1)
 
     ggsave(file = paste0(outdir, "/Fig4D_concordance_", sample, ".png"),
-        plot = g, width = 5, height = 4, dpi = 300)
+        plot = g, width = 5.5, height = 4, dpi = 300)
     ggsave(file = paste0(outdir, "/Fig4D_concordance_", sample, ".pdf"),
-        plot = g, width = 5, height = 4)
+        plot = g, width = 5.5, height = 4)
 }
 
 # Legend as separate horizontal file
