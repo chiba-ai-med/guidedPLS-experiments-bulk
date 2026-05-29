@@ -83,8 +83,8 @@ g_legend <- ggplot(spec_avg, aes(x = method, y = mean_specificity, fill = method
     scale_fill_brewer(palette = "Dark2", name = "") +
     theme_minimal() +
     theme(legend.direction = "horizontal",
-          legend.text = element_text(size = 16),
-          legend.key.size = unit(1, "cm"))
+          legend.text = element_text(size = 20),
+          legend.key.size = unit(1.2, "cm"))
 
 legend_grob <- cowplot::get_legend(g_legend + theme(legend.position = "bottom"))
 
