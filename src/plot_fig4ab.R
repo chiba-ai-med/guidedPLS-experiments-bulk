@@ -4,8 +4,8 @@ source("src/Functions.R")
 # Fig4B: grafting (guided_pls, rbh_pls) + legend
 
 panels <- list(
-    list(panel = "Fig4A", sample = "parasitism1", pt_size = 4.5),
-    list(panel = "Fig4B", sample = "grafting", pt_size = 3.5)
+    list(panel = "Fig4A", sample = "parasitism1", pt_size = 9),
+    list(panel = "Fig4B", sample = "grafting", pt_size = 7)
 )
 methods <- c("guided_pls", "rbh_pls")
 

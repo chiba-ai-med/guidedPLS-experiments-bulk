@@ -22,7 +22,7 @@ for (sample in samples) {
 
         g <- ggplot(d, aes(x = condition, y = dim_label, fill = neg_log10_p)) +
             geom_tile(color = "white", linewidth = 0.5) +
-            geom_text(aes(label = round(neg_log10_p, 1)), size = 6.4, color = "white") +
+            geom_text(aes(label = round(neg_log10_p, 1)), size = 12.8, color = "white") +
             scale_fill_gradientn(colours = viridis(100), name = "-log10(p)") +
             theme_minimal() +
             theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 14),
