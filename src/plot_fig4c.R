@@ -20,6 +20,11 @@ for (sample in samples) {
         d$dim_label <- factor(d$dim_label, levels = paste0("Dim", seq(max(d$dim))))
         d$condition <- factor(d$condition, levels = unique(d$condition))
 
+        n_cond <- length(unique(d$condition))
+        # Scale width proportionally so tile size is consistent across datasets
+        fig_width <- 1.4 * n_cond + 2
+        fig_height <- 6
+
         g <- ggplot(d, aes(x = condition, y = dim_label, fill = neg_log10_p)) +
             geom_tile(color = "white", linewidth = 0.5) +
             geom_text(aes(label = round(neg_log10_p, 1)), size = 9, color = "white") +
@@ -32,9 +37,9 @@ for (sample in samples) {
 
         fname <- paste0("Fig4C_heatmap_", sample, "_", sp)
         ggsave(file = paste0(outdir, "/", fname, ".png"),
-            plot = g, width = 7, height = 4, dpi = 300)
+            plot = g, width = fig_width, height = fig_height, dpi = 300)
         ggsave(file = paste0(outdir, "/", fname, ".pdf"),
-            plot = g, width = 7, height = 4)
+            plot = g, width = fig_width, height = fig_height)
     }
 }
 
